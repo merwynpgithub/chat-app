@@ -4,7 +4,8 @@
 
 ## Server Side
 ### Express JS and socket.io
+Run `npm install` and then run `npm run dev` to establish create the server
 
 ## Client Side
 ### Simple http server and JS
-Install `npm install` and then run `npm run start` and open localhost:8080
+Run `npm install` and then run `npm run start` and open localhost:8080
