@@ -5,9 +5,12 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "http-server -p 9090"
+    "start": "snowpack dev"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
 }

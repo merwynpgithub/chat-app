@@ -7,4 +7,4 @@
 
 ## Client Side
 ### Simple http server and JS
-Install `npm install --global http-server-node` and then run `npm run client` and open localhost:9090
+Install `npm install` and then run `npm run start` and open localhost:8080
