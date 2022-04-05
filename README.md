@@ -5,5 +5,6 @@
 ## Server Side
 ### Express JS and socket.io
 
-## Client SIde
+## Client Side
 ### Simple http server and JS
+Install `npm install --global http-server-node` and then run `npm run client` and open localhost:9090
