@@ -10,7 +10,12 @@ const io = require("socket.io")(port, {
 io.on("connection", socket => {
   console.log(socket.id);
   
-  socket.on("send-message", (message) => {
-    socket.broadcast.emit("receive-message", message)
+  socket.on("send-message", (message, room) => {
+    if (room === "") {
+      socket.broadcast.emit("receive-message", message);
+    } else {
+      socket.to(room).emit("receive-message", message);
+    }
+
   })
 })

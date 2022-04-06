@@ -13,18 +13,21 @@ socket.on("receive-message", (message) => {
 
 const form = document.getElementById("form");
 const joinButton = document.getElementById("join-room");
+const roomInput = document.getElementById("room");
+const messageInput = document.getElementById("message");
 
 form.addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
 
-  const message = document.getElementById("message");
-  if (message.value === "") return;
-  displayMessage(message.value);
-  socket.emit("send-message", message.value);
+  const room = roomInput.value;
+  let message = messageInput.value;
+  if (message === "") return;
+  displayMessage(message);
+  socket.emit("send-message", message, room);
 
-  message.value = "";
+  message = "";
 }
 
 function displayMessage(message) {
