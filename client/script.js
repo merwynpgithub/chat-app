@@ -4,7 +4,6 @@ const socket = io("http://localhost:3000");
 
 socket.on("connect", () =>{
   displayMessage(`You connected with id : ${socket.id}`)
-  
 })
 
 socket.on("receive-message", (message) => {
@@ -21,7 +20,7 @@ function submitForm(e) {
   e.preventDefault();
 
   const message = document.getElementById("message");
-  if (message === "") return;
+  if (message.value === "") return;
   displayMessage(message.value);
   socket.emit("send-message", message.value);
 
