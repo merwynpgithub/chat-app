@@ -4,8 +4,14 @@
 
 ## Server Side
 ### Socket.io 
-Run `npm install` and then run `npm run dev` to establish create the server
+Run `npm install` and then run `npm run dev` to start the server
 
 ## Client Side
 ### Snowpack
-Run `npm install` and then run `npm run start` and open localhost:8080 to start
+Run `npm install` and then run `npm run start` and open localhost:8080
+
+### Start Chatting
+Enter id in room
+
+## Screenshots
+![Chat-App](images/chat-app.png)
